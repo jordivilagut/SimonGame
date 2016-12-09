@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simon Game</title>
+        <link href='https://fonts.googleapis.com/css?family=Alfa+Slab+One' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' href='resources/CSS_Reset/reset.css'>
+        <link rel='stylesheet' href='assets/styles/styles.css'>
+    </head>
+
+    <body>
+        <div class="gameInfo">
+            <div id="stepCounter">--</div>
+            <div class="strictModeBtn">
+                <p>Strict Mode</p>
+                <label class="switch">
+                    <input id="strictModeBtn" type="checkbox">
+                    <div class="slider"></div>
+                </label>
+            </div>
+        </div>
+
+        <div class="simonWheel">
+            <button id="blueBtn" class="quarter" value=0 disabled></button>
+            <button id="orangeBtn" class="quarter" value=1 disabled></button>
+            <button id="greenBtn" class="quarter" value=2 disabled></button>
+            <button id="redBtn" class="quarter" value=3 disabled></button>
+            <div class="cross1"></div>
+            <div class="cross2"></div>
+            <div class="centerPanel">
+                <button id="startSimon" type="button">Simon</button>
+            </div>
+        </div>
+
+        <script src='resources/jQuery/jquery-3.1.1.min.js'></script>
+        <script src='resources/jQuery/jquery-ui.min.js'></script>
+        <script src='https://cdn.rawgit.com/admsev/jquery-play-sound/master/jquery.playSound.js'></script>
+        <script src='assets/scripts/main.js'></script>
+    </body>
+</html>

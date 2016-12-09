@@ -1,0 +1,201 @@
+/* SIMON WHEEL CSS */
+.simonWheel {
+    background: rgb(6, 31, 38);
+    position: relative;
+    width: 550px;
+    height: 550px;
+    margin: 0 auto auto auto;
+    border-radius: 275px;
+}
+
+.cross1 {
+    position: absolute;
+    background: rgb(6, 31, 38);
+    top: 5%;
+    left: 48%;
+    width: 4%;
+    height: 90%;
+}
+
+.cross2 {
+    position: absolute;
+    background: rgb(6, 31, 38);
+    top: 48%;
+    left: 5%;
+    width: 90%;
+    height: 4%;
+}
+
+.centerPanel {
+    width: 40%;
+    height: 40%;
+    background-color: rgb(6, 31, 38);
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    border-radius: 50%;
+}
+
+.centerPanel button{
+    width: 90%;
+    height: 90%;
+    background: radial-gradient(dimgray, rgb(6, 31, 38),black);
+    position: absolute;
+    border: solid rgb(50,50, 60) 1px;
+    top: 5%;
+    left: 5%;
+    border-radius: 50%;
+    text-align: center;
+    border: none;
+    color: whitesmoke;
+    font-family: Alfa Slab One;
+    font-size: 45px;
+}
+
+.centerPanel button:hover{
+    background: radial-gradient(silver, rgb(6, 31, 38),black);
+}
+
+.quarter {
+    position: absolute;
+    width: 45%;
+    height: 45%;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button:focus{
+    outline: none;
+}
+
+button.quarter{
+    border: none;
+}
+
+#blueBtn {
+    top: 5%;
+    left: 5%;
+    background: rgb(41, 122, 142);
+    border-radius: 100% 0 0 0;
+}
+
+#orangeBtn {
+    top: 5%;
+    right: 5%;
+    background: rgb(237, 163, 66);
+    border-radius: 0 100% 0 0;
+}
+
+#greenBtn {
+    bottom: 5%;
+    left: 5%;
+    background: rgb(146, 219, 98);
+    border-radius: 0 0 0 100%;
+}
+
+#redBtn {
+    bottom: 5%;
+    right: 5%;
+    background: rgb(160, 55, 55);
+    border-radius: 0 0 100% 0;
+}
+
+/* BUTTON EFFECTS */
+#blueBtn.flash{
+    background: radial-gradient(rgb(48, 214, 255), rgb(41, 122, 142), rgb(2, 28, 35));
+}
+
+#orangeBtn.flash{
+    background: radial-gradient(rgb(255, 242, 0), rgb(237, 163, 66), rgb(2, 28, 35));
+}
+
+#greenBtn.flash{
+    background: radial-gradient(rgb(41, 249, 0), rgb(146, 219, 98), rgb(2, 28, 35));
+}
+
+#redBtn.flash{
+    background: radial-gradient(rgb(255, 48, 48), rgb(160, 55, 55), rgb(2, 28, 35));
+}
+
+/* TOP PANEL INFO CSS */
+.gameInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 250px 50px 250px;
+    font-family: Courier New;
+}
+
+#stepCounter{
+    line-height: 70px;
+    margin: 15px 50px 15px 0;
+    width: 80px;
+    border-radius: 2px;
+    background: rgb(6, 31, 38);
+    color: orange;
+    text-align: center;
+    font-size: 40px;
+    box-shadow: 0 0 3px 1px orange;
+}
+
+.strictModeBtn{
+    text-align: center;
+}
+
+
+/* STRICT MODE SWITCH BUTTON CSS */
+.switch {
+    margin-top: 10px;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {display:none;}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background: rgb(6, 31, 38);
+    box-shadow: 0 0 3px 1px orange;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
